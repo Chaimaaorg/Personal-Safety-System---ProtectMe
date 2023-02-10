@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".BottomMenuFragments.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/wave_image"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wavy_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/img1" />
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:text="Jack Willson"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jackwillson@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/textName"
+        app:layout_constraintStart_toStartOf="@+id/textName"
+        app:layout_constraintTop_toBottomOf="@+id/textName" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmail">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/top_button_background"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/step" />
+
+                <TextView
+                    android:id="@+id/NbrOfSteps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Number of steps"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/btnHeartbeatsPopup"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/top_button_background"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:src="@drawable/heart" />
+
+                <TextView
+                    android:id="@+id/Heartbeats"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heartbeats"
+                    android:layout_margin="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Password:"
+                android:textColor="@color/colorPurple"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="*********"
+                android:focusable="false"
+                android:inputType="none"
+                android:clickable="false"
+                android:textAlignment="viewEnd"
+                android:textColor="#5b5b5b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Email:"
+                android:textColor="@color/colorPurple"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="jackwillson@gmail.com"
+                android:textAlignment="viewEnd"
+                android:textColor="#5b5b5b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Phone:"
+                android:textColor="@color/colorPurple"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="06.41.49.85.24"
+                android:textAlignment="viewEnd"
+                android:textColor="#5b5b5b"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-80dp"
+        android:backgroundTint="@color/colorPurple"
+        android:gravity="center"
+        android:text="Edit Profile"
+        app:cornerRadius = "20dp"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserDashboard.ContactDashboard">
+
+    <include layout="@layout/toolbar_emer_contact"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="110dp"
+            android:layout_height="90dp"
+            android:id="@+id/img1"
+            android:src="@drawable/img4" />
+
+        <TextView
+            android:id="@+id/textName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Alicia Montes"
+            android:textColor="@color/colorPurple"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPurple" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_profile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="text"
+            android:id="@+id/textName"
+            android:hint="Alicia Montes"
+            android:textSize="18dp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/lightGrey"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/DarkGray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:drawableTint="@color/colorPurple"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:textColor="@color/colorBlack"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="text"
+            android:id="@+id/textEmail"
+            android:hint="aliciamontes@gmail.com"
+            android:textSize="18dp"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/lightGrey"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/DarkGray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_profile"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Role"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/colorBlack"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/textRole"
+            android:hint="Princpal user"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/lightGrey"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/DarkGray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="35dp"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginLeft="0dp"
+            android:drawableTint="@color/colorPurple"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_phone"
+            android:textColor="@color/colorBlack"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:inputType="text"
+            android:id="@+id/textPhone"
+            android:hint="+212 641 97 43 24"
+            android:textSize="18dp"
+            android:layout_marginLeft="22dp"
+            android:textColor="@color/lightGrey"/>
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/DarkGray"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/btnEdit"
+            android:text="Edit profile"
+            android:textSize="18dp"
+            android:textColor="@color/colorPurple"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_edit"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="25dp"
+            android:layout_marginLeft="-2dp"/>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext"
+            android:text="Change password"
+            android:id="@+id/btnEditPwd"
+            android:textSize="18dp"
+            android:textColor="@color/colorPurple"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_lock_pwd"
+            android:paddingLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:paddingRight="25dp"
+            android:layout_marginLeft="0dp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

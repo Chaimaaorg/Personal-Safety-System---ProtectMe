@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "940398198808",
+    "project_id": "personalsafetysystem-6d09f",
+    "storage_bucket": "personalsafetysystem-6d09f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940398198808:android:28c08ba5108dd50a4a436d",
+        "android_client_info": {
+          "package_name": "com.example.personalsafetysystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940398198808-n66e9qms7lhmt38rthuitjabno2uuhk2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDstLCitiPy9iFJEHzV29iK60pkCdQKO9w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940398198808-n66e9qms7lhmt38rthuitjabno2uuhk2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/colorPurple"
+    tools:context=".LoginActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="32sp"
+                android:text="Personal Safety System"
+                android:textColor="@color/colorPurple"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/text_email"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:textColorHint="#8c8c8c"
+                android:drawableLeft="@drawable/ic_action_email"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/text_pass"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:hint="Password"
+                android:textColorHint="#8c8c8c"
+                android:drawableLeft="@drawable/ic_password"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Login"
+                android:id="@+id/btnSubmit_login"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/colorPurple"
+                app:cornerRadius = "20dp"/>
+
+
+            <TextView
+                android:id="@+id/createAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:text="Not yet registered? Sign Up"
+                android:textAlignment="center"
+                android:textColor="#7E40B9"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="350dp"
+    android:layout_height="475dp"
+    android:background="@android:color/transparent"
+    android:padding="5dp"
+    android:layout_gravity="center">
+
+    <EditText
+        android:id="@+id/etFromLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="      Enter your location"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_shape2"
+        android:textColor="@color/white"
+        android:paddingLeft="8dp"/>
+    <EditText
+        android:id="@+id/etToLocation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/button_shape2"
+        android:hint="      Enter destination"
+        android:paddingLeft="8dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnGetDirection"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:backgroundTint="@color/colorPurple"
+        app:cornerRadius = "20dp"
+        android:text="Get Direction"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

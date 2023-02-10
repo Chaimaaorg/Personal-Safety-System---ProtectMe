@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_hospital"
+        android:icon="@drawable/baseline_local_hospital_24"
+        android:title=""
+        />
+
+    <item
+        android:id="@+id/nav_doctor"
+        android:icon="@drawable/baseline_notifications_active_24"
+        android:title="" />
+
+    <item
+        android:id="@+id/nav_police"
+        android:icon="@drawable/baseline_local_police_24"
+        android:title="" />
+    <item
+        android:id="@+id/nav_pharmacy"
+        android:icon="@drawable/baseline_local_pharmacy_24"
+        android:title="" />
+</menu>

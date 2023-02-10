@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-23dp" />
+
+    <SearchView
+        android:id="@+id/mapSearch"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/bg_search_view"
+        android:elevation="5dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search ..."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/iv_get_location"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/mapSearch"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/baseline_my_location_24" />
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/iv_get_location"
+        android:layout_marginTop="310dp"
+        android:layout_marginStart="7dp"
+        app:backgroundTint="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapSearch"
+        app:srcCompat="@drawable/ic_logout"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_start_route"
+        android:layout_width="323dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/logout"
+        android:backgroundTint="@color/colorPurple"
+        app:cornerRadius = "20dp"
+        android:text="Start route"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/map"
+        app:layout_constraintVertical_bias="0.894"
+        tools:ignore="MissingConstraints" />
+
+
+</FrameLayout>

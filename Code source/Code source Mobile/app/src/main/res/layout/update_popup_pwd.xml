@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update Password"
+        android:background="@color/colorPurple"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:gravity="center"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:layout_centerVertical="true"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/txtPassword"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            android:padding="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="New password"
+            android:textColorHint="#8c8c8c"
+            android:textColor="@color/black"
+            android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:passwordToggleEnabled="true"
+        >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/txtConfimrPassword"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Confirm  password"
+        android:textColorHint="#8c8c8c"
+        android:textColor="@color/black"
+        android:drawablePadding="8dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="Update"
+        app:cornerRadius="20dp"
+        android:textSize="17dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPurple"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnUpdate"/>
+
+</LinearLayout>

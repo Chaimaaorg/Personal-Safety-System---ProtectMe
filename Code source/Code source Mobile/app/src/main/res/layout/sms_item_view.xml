@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+app:cardCornerRadius="6px"
+app:cardUseCompatPadding="true">
+<RelativeLayout
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/address_text_view"
+        android:text="Alicia Montes"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textSize="19sp"
+        android:textColor="@color/logoColor"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is an emergency message"
+        android:id="@+id/body_text_view"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_below="@+id/date_text_view"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_text_view"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/brandon_grotesque_black"
+        android:text="28/05/2023 02:19:04"
+        android:textColor="@color/DarkGray"
+        android:textSize="17sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/body_text_view"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorPurple" />
+
+
+</RelativeLayout>
+
+
+
+
+</RelativeLayout>

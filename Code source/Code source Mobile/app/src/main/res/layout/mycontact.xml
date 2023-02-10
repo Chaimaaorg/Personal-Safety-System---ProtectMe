@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6px"
+    android:background="@color/lightWhite"
+    app:cardUseCompatPadding="true">
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/circle_shape"
+            android:id="@+id/img1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img1" />
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amine" />
+        <TextView
+            android:id="@+id/numbertext"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-20dp"
+            android:inputType="textPassword"
+            android:textColor="#F5F5F5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amine" />
+
+    </LinearLayout>
+
+</LinearLayout>
